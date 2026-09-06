@@ -1,0 +1,38 @@
+# AGOZI
+
+AGOZI is a mobile Android application for remembering recurring real-life actions: when the user last did something and when it should be done again.
+
+Official website: https://agozi.eu/
+Support: support@agozi.eu
+General contact: contact@agozi.eu
+
+## Core concept
+AGOZI is not a general to-do list and not a habit tracker. It is designed around one question: "When did I last do this, and when should I do it again?"
+
+Users create an item, record the last completion date, set a maximum interval in days, weeks, or real calendar months, and AGOZI calculates the next due date. The dashboard sorts items by due date and shows statuses such as overdue, due today, due soon, or all good. Tapping "Done today" records completion and starts the next cycle.
+
+## V1 characteristics
+- Free
+- No advertising
+- No advertising SDK
+- No AGOZI account required
+- Local-first data storage
+- Core operation works offline
+- Local notifications
+- Completion history
+- Backup export/import initiated by the user
+- Light, dark, and system appearance
+- 29 supported locales
+
+## Typical use cases
+Changing bedsheets, descaling a coffee machine, replacing filters, watering plants, washing a car, recurring household maintenance, pet-care reminders, periodic cleaning, and custom recurring real-life items.
+
+## Privacy
+AGOZI V1 stores item data, dates, history, and settings locally on the user's device. It does not use an AGOZI backend to store those items and does not include advertising tracking.
+
+Privacy policy: https://agozi.eu/privacy/
+Support: https://agozi.eu/support/
+Terms: https://agozi.eu/terms/
+About: https://agozi.eu/about/
+
+AGOZI Android V1 is currently being prepared for Google Play release.

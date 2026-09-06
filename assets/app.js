@@ -1,0 +1,9 @@
+const btn = document.querySelector('.menu-button');
+const nav = document.querySelector('.nav-links');
+if (btn && nav) {
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+}
+for (const el of document.querySelectorAll('[data-year]')) el.textContent = new Date().getFullYear();
