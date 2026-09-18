@@ -9,30 +9,40 @@ General contact: contact@agozi.eu
 ## Core concept
 AGOZI is not a general to-do list and not a habit tracker. It is designed around one question: "When did I last do this, and when should I do it again?"
 
-Users create an item, record the last completion date, set a maximum interval in days, weeks, or real calendar months, and AGOZI calculates the next due date. The dashboard sorts items by due date and shows statuses such as overdue, due today, due soon, or all good. Tapping "Done today" records completion and starts the next cycle.
+Users create an item, record the last completion date, set a maximum interval in days, weeks, or real calendar months, and AGOZI calculates the next due date. The dashboard surfaces overdue, due-soon and healthy items. Tapping "Done today" records completion and starts the next cycle.
 
-## V1 characteristics
+## Current characteristics
 - Free
 - No advertising
 - No advertising SDK
-- No AGOZI account required
-- Local-first data storage
-- Core operation works offline
+- No account required for private use
+- Optional account for sharing only
+- Google sign-in or email one-time code for account access
+- AGOZI ID for inviting another participant
+- Private items are local-first
+- Only explicitly shared items are synchronized through AGOZI's backend
+- Shared Done / Undo and common completion history
+- Shared-item owner editing with owner/member permissions
+- Offline-capable private core
+- Offline queue/synchronization behavior for supported shared actions
 - Local notifications
 - Completion history
 - Backup export/import initiated by the user
 - Light, dark, and system appearance
 - 29 supported locales
 
+## Sharing model
+AGOZI sharing is item-by-item, not account-wide. Creating an account does not upload all private items. A user chooses a specific item to share and invites another person using their AGOZI ID. Shared item state and shared history are synchronized so participants can see a consistent result across devices. The owner keeps the editing rights defined by the app while other participants keep the actions available to members, including leaving the shared item.
+
 ## Typical use cases
-Changing bedsheets, descaling a coffee machine, replacing filters, watering plants, washing a car, recurring household maintenance, pet-care reminders, periodic cleaning, and custom recurring real-life items.
+Changing bedsheets, descaling a coffee machine, replacing filters, watering plants, washing a car, recurring household maintenance, pet-care reminders, periodic cleaning, and custom recurring real-life items. Shared items are useful for recurring responsibilities handled by two people.
 
 ## Privacy
-AGOZI V1 stores item data, dates, history, and settings locally on the user's device. It does not use an AGOZI backend to store those items and does not include advertising tracking.
+AGOZI follows a local-first model. Private item data stays on the user's device. Authentication and explicitly shared items use Supabase infrastructure for the data required to provide account, invitation, sharing and synchronization features. AGOZI V1 has no advertising tracking.
 
 Privacy policy: https://agozi.eu/privacy/
 Support: https://agozi.eu/support/
 Terms: https://agozi.eu/terms/
 About: https://agozi.eu/about/
 
-AGOZI Android V1 is currently being prepared for Google Play release.
+AGOZI Android is currently in pre-production validation for Google Play release.
