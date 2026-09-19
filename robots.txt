@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://agozi.eu/sitemap.xml
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://www.agozi.eu/sitemap.xml

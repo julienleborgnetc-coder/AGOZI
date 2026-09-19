@@ -2,7 +2,7 @@
 
 AGOZI is a mobile Android application for remembering recurring real-life actions: when the user last did something and when it should be done again.
 
-Official website: https://agozi.eu/
+Official website: https://www.agozi.eu/
 Support: support@agozi.eu
 General contact: contact@agozi.eu
 
@@ -40,9 +40,13 @@ Changing bedsheets, descaling a coffee machine, replacing filters, watering plan
 ## Privacy
 AGOZI follows a local-first model. Private item data stays on the user's device. Authentication and explicitly shared items use Supabase infrastructure for the data required to provide account, invitation, sharing and synchronization features. AGOZI V1 has no advertising tracking.
 
-Privacy policy: https://agozi.eu/privacy/
-Support: https://agozi.eu/support/
-Terms: https://agozi.eu/terms/
-About: https://agozi.eu/about/
+How AGOZI reminders work: https://www.agozi.eu/fonctionnement/
+Home maintenance use case: https://www.agozi.eu/usages/entretien-maison/
+Car maintenance use case: https://www.agozi.eu/usages/entretien-voiture/
+English website: https://www.agozi.eu/en/
+Privacy policy: https://www.agozi.eu/privacy/
+Support: https://www.agozi.eu/support/
+Terms: https://www.agozi.eu/terms/
+About: https://www.agozi.eu/about/
 
-AGOZI Android is currently in pre-production validation for Google Play release.
+AGOZI Android is currently in closed testing and is not yet publicly available on Google Play.
