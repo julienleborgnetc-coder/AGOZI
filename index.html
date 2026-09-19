@@ -10,6 +10,7 @@
   <link rel="alternate" hreflang="en" href="https://www.agozi.eu/en/">
   <link rel="alternate" hreflang="x-default" href="https://www.agozi.eu/">
   <link rel="icon" href="/assets/agozi-logo.png">
+  <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/styles.css">
   <meta property="og:type" content="website"><meta property="og:site_name" content="AGOZI">
   <meta property="og:title" content="AGOZI — Rappels de tâches récurrentes sur Android">
@@ -18,14 +19,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.agozi.eu/#website","url":"https://www.agozi.eu/","name":"AGOZI","inLanguage":["fr","en"]},{"@type":"Organization","@id":"https://www.agozi.eu/#organization","name":"AGOZI","url":"https://www.agozi.eu/","logo":"https://www.agozi.eu/assets/agozi-logo.png","email":"contact@agozi.eu"},{"@type":"MobileApplication","@id":"https://www.agozi.eu/#app","name":"AGOZI","url":"https://www.agozi.eu/","applicationCategory":"UtilitiesApplication","applicationSubCategory":"Recurring task reminder","operatingSystem":"Android","isAccessibleForFree":true,"description":"AGOZI est une application Android gratuite et sans publicité qui enregistre la dernière réalisation d'une tâche récurrente, calcule sa prochaine échéance et envoie des rappels. Elle est actuellement en test fermé et n'est pas encore disponible publiquement.","publisher":{"@id":"https://www.agozi.eu/#organization"}}]}</script>
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/" aria-label="AGOZI — Accueil"><img src="/assets/agozi-logo.png" alt="AGOZI"></a>
-    <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="nav-links" aria-label="Navigation principale">
-      <a href="#fonctionnement">Fonctionnement</a><a href="#usages">Usages</a><a href="#difference">Pourquoi AGOZI</a><a href="#confidentialite">Confidentialité</a><a href="/support/">Support</a><a class="lang" href="/en/">English</a>
+    <a class="brand" href="/" aria-label="AGOZI — Accueil"><img src="/assets/agozi-logo.png" alt="AGOZI" width="62" height="62"></a>
+    <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-navigation"><span aria-hidden="true">☰</span></button>
+    <nav class="nav-links" id="site-navigation" aria-label="Navigation principale">
+      <a href="#fonctionnement">Fonctionnement</a><a href="#usages">Usages</a><a href="#confidentialite">Confidentialité</a><a href="/support/">Support</a><a class="lang" href="/en/" lang="en">EN <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     </nav>
   </div>
 </header>
@@ -33,67 +34,88 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <img class="hero-logo" src="/assets/agozi-logo.png" alt="Logo AGOZI">
-        <p class="eyebrow">Application Android de rappels récurrents</p>
-        <h1>Vos tâches récurrentes, de la dernière fois à la prochaine échéance.</h1>
-        <p class="lead"><strong>Quand l'avez-vous fait pour la dernière fois ? Quand faut-il le refaire ?</strong> AGOZI est une application Android de rappels : enregistrez la dernière réalisation, choisissez un intervalle en jours, semaines ou mois calendaires, puis retrouvez la prochaine échéance.</p>
-        <div class="pills"><span class="pill">100 % gratuit</span><span class="pill">Sans publicité</span><span class="pill">Sans compte obligatoire</span><span class="pill">Local-first</span></div>
-        <div class="cta-row"><span class="button primary">Test fermé Android en cours</span><a class="button secondary" href="#fonctionnement">Découvrir AGOZI</a></div>
-        <p class="note">Actuellement en test fermé sur Android · Pas encore disponible publiquement</p>
+        <p class="eyebrow"><span class="small-dot" aria-hidden="true"></span> Une mémoire tranquille, au quotidien</p>
+        <h1>La dernière fois, <br>notée.<br><span>La prochaine, <br>prévue.</span></h1>
+        <p class="lead">Notez la dernière réalisation et choisissez un intervalle. AGOZI calcule la prochaine échéance et vous rappelle quand recommencer.</p>
+        <div class="cta-row"><a class="button primary" href="#fonctionnement">Voir le fonctionnement <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+        <p class="availability"><span class="small-dot" aria-hidden="true"></span> Test fermé Android en cours<br><span>Pas encore disponible publiquement.</span></p>
       </div>
-      <div class="product-stage" aria-label="Aperçu de l'interface AGOZI">
-        <div class="float-card one"><strong>Priorités claires</strong><span>Les échéances urgentes remontent d'abord.</span></div>
-        <div class="phone-shell">
-          <div class="phone-screen">
-            <div class="phone-top"><span class="phone-brand">AGOZI</span><span class="avatar">J</span></div>
-            <div class="mock-title">Voici ce qui mérite votre attention.</div>
-            <div class="summary-grid"><div class="summary red"><small>EN RETARD</small><strong>2</strong></div><div class="summary amber"><small>BIENTÔT</small><strong>1</strong></div></div>
-            <div class="list-label">À SURVEILLER</div>
-            <div class="mock-card"><div class="mock-row"><div><strong>Changer les draps</strong><p>Dernière fois : il y a 9 jours</p></div><span class="status red">En retard</span></div></div>
-            <div class="mock-card"><div class="mock-row"><div><strong>Détartrer la machine</strong><p>Dernière fois : il y a 27 jours</p></div><span class="status amber">Dans 2 jours</span></div></div>
-            <div class="mock-card"><div class="mock-row"><div><strong>Arroser l'orchidée</strong><p>Dernière fois : il y a 4 jours</p></div><span class="status good">Tout va bien</span></div></div>
-            <div class="done">Fait aujourd'hui</div>
-          </div>
-        </div>
-        <div class="float-card two"><strong>Local par défaut</strong><span>Créez un compte uniquement si vous voulez partager un suivi.</span></div>
+      <div class="hero-product">
+        <p class="product-label">Vos rappels récurrents. L’esprit plus libre.</p>
+        <figure class="app-figure hero-figure">
+  <a class="screen-link" href="/assets/screenshots/dashboard-fr.jpg" target="_blank" rel="noopener" aria-label="Tableau de bord AGOZI : un élément bientôt dû, le réfrigérateur à nettoyer demain et la date de dernière réalisation. — ouvrir la capture complète dans un nouvel onglet">
+    <div class="device-frame"><div class="screen-window"><img src="/assets/screenshots/dashboard-fr.jpg" alt="Tableau de bord AGOZI : un élément bientôt dû, le réfrigérateur à nettoyer demain et la date de dernière réalisation." width="709" height="1536" fetchpriority="high"></div></div>
+  </a><figcaption>Capture réelle de l’application · Agrandir <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></figcaption></figure>
       </div>
     </div>
+    <div class="container reassurance" aria-label="Les essentiels AGOZI"><span>Gratuit. Sans publicité.</span><span>Privé, sans compte.</span><span>Utilisable hors ligne en privé.</span></div>
   </section>
 
-  <section class="proof"><div class="container proof-grid"><div class="proof-item"><strong>29</strong><span>langues dès la V1</span></div><div class="proof-item"><strong>0</strong><span>compte obligatoire</span></div><div class="proof-item"><strong>2</strong><span>modes : privé ou partagé</span></div><div class="proof-item"><strong>100 %</strong><span>du cœur privé utilisable hors ligne</span></div></div></section>
-
   <section id="fonctionnement" class="section white">
-    <div class="container center"><p class="eyebrow">Simple par conception</p><h2>Une idée évidente, exécutée proprement.</h2><p class="section-intro">« Quand est-ce que je l'ai fait pour la dernière fois, et quand dois-je le refaire ? » AGOZI garde cette information à votre place.</p></div>
-    <div class="container steps"><article class="step-card"><div class="step-number">01</div><h3>Ajoutez ce qui revient</h3><p>Draps, filtres, plantes, voiture, entretien de la maison, machine à café… ou votre propre item.</p></article><article class="step-card"><div class="step-number">02</div><h3>Indiquez la dernière fois</h3><p>Choisissez la date et un intervalle maximum en jours, semaines ou vrais mois calendaires.</p></article><article class="step-card"><div class="step-number">03</div><h3>AGOZI garde le fil</h3><p>La prochaine échéance est calculée automatiquement et les éléments les plus urgents remontent toujours en premier.</p></article></div>
+    <div class="container story-grid">
+      <div class="story-copy">
+        <p class="eyebrow">01 — Le fonctionnement</p>
+        <h2>Vous faites.<br>AGOZI garde le fil.</h2>
+        <p class="section-intro">Pas besoin de tout retenir. Une date, un intervalle, et votre prochain rappel prend forme.</p>
+        <ol class="workflow">
+          <li><span class="step-index" aria-hidden="true">01</span><div><h3>Notez la dernière fois</h3><p>Aujourd’hui, hier ou une date précise : partez de ce qui s’est réellement passé.</p></div></li>
+          <li><span class="step-index" aria-hidden="true">02</span><div><h3>Choisissez votre rythme</h3><p>En jours, semaines ou mois calendaires. Vous décidez de l’intervalle adapté à votre quotidien.</p></div></li>
+          <li><span class="step-index" aria-hidden="true">03</span><div><h3>Un geste, un nouveau cycle</h3><p>AGOZI vous rappelle l’échéance. Une fois la tâche terminée, « Fait aujourd’hui » enregistre la réalisation et calcule la suivante.</p></div></li>
+        </ol>
+        <a class="text-link" href="/fonctionnement/">Explorer le fonctionnement en détail <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <p class="quiet-note" id="difference">Pas de série à maintenir, pas d’objectif quotidien. Juste la mémoire des choses qui reviennent.</p>
+      </div>
+      <div class="story-visual setup-visual"><figure class="app-figure">
+  <a class="screen-link" href="/assets/screenshots/setup-fr.jpg" target="_blank" rel="noopener" aria-label="Configuration rapide AGOZI : choix de la dernière réalisation, de l’intervalle et affichage de la prochaine échéance. —  ouvrir la capture complète dans un nouvel onglet">
+    <div class="device-frame"><div class="screen-window"><img src="/assets/screenshots/setup-fr.jpg" alt="Configuration rapide AGOZI : choix de la dernière réalisation, de l’intervalle et affichage de la prochaine échéance." width="709" height="1536" loading="lazy" decoding="async"></div></div>
+  </a><figcaption>Votre intervalle, votre prochaine échéance · Agrandir <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></figcaption></figure></div>
+    </div>
   </section>
 
   <section id="usages" class="section">
-    <div class="container center"><p class="eyebrow">Des rappels adaptés à la vraie vie</p><h2>Une seule app pour les échéances que l'on oublie facilement.</h2><p class="section-intro">AGOZI convient aux tâches périodiques qui reviennent après quelques jours, plusieurs semaines, quelques mois ou une année entière.</p></div>
-    <div class="container cards-3 intent-grid">
-      <a class="card guide-card" href="/fonctionnement/"><div class="icon-tile">◷</div><h3>Comment fonctionnent les rappels ?</h3><p>De la date de dernière réalisation jusqu'au rappel et au nouveau cycle après « Fait aujourd'hui ».</p><span class="guide-link">Comprendre le fonctionnement →</span></a>
-      <a class="card guide-card" href="/usages/entretien-maison/"><div class="icon-tile">⌂</div><h3>Entretien de la maison</h3><p>Filtres, linge de maison, appareils et nettoyages périodiques : des exemples concrets sans fréquence imposée.</p><span class="guide-link">Voir les usages maison →</span></a>
-      <a class="card guide-card" href="/usages/entretien-voiture/"><div class="icon-tile">◇</div><h3>Entretien de la voiture</h3><p>Gardez la date d'un entretien et son échéance temporelle suivante, sans prétendre suivre le kilométrage.</p><span class="guide-link">Voir les usages voiture →</span></a>
+    <div class="container story-grid uses-grid">
+      <div class="story-copy">
+        <p class="eyebrow">02 — Dans la vraie vie</p>
+        <h2>Les petites choses<br>qui reviennent.</h2>
+        <p class="section-intro">Les draps, la machine à café, la voiture, les plantes… Partez d’une suggestion ou ajoutez votre propre tâche.</p>
+        <div class="use-links">
+          <a class="use-link" href="/usages/entretien-maison/"><span class="use-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9"/></svg></span><div><h3>À la maison</h3><p>Linge, filtres et entretien des appareils.</p></div><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="use-link" href="/usages/entretien-voiture/"><span class="use-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 2-5h10l2 5M4 8h16v11H4zM7 19v2m10-2v2M7 12h1m8 0h1M4 15h16"/></svg></span><div><h3>Pour la voiture</h3><p>La dernière intervention, la prochaine date.</p></div><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <div class="use-link"><span class="use-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 3C7 2 2 7 5 14s14 6 15-11Z"/><path d="M3 21 15 9"/></svg></span><div><h3>Et ce qui compte pour vous</h3><p>Plantes, animaux ou suivis personnalisés.</p></div></div>
+        </div>
+        <p class="quiet-note">Aucune fréquence imposée : vous choisissez vos intervalles selon votre situation.</p>
+      </div>
+      <div class="story-visual suggestions-visual"><figure class="app-figure">
+  <a class="screen-link" href="/assets/screenshots/suggestions-fr.jpg" target="_blank" rel="noopener" aria-label="Suggestions AGOZI : une liste de tâches récurrentes avec les draps et le lave-linge sélectionnés. —  ouvrir la capture complète dans un nouvel onglet">
+    <div class="device-frame"><div class="screen-window"><img src="/assets/screenshots/suggestions-fr.jpg" alt="Suggestions AGOZI : une liste de tâches récurrentes avec les draps et le lave-linge sélectionnés." width="709" height="1536" loading="lazy" decoding="async"></div></div>
+  </a><figcaption>Quelques idées pour commencer · Agrandir <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></figcaption></figure></div>
     </div>
   </section>
 
-  <section id="difference" class="section dark">
-    <div class="container compare-wrap"><div><p class="eyebrow" style="color:#a9c6ad">La différence AGOZI</p><h2>Pas une todo list.<br>Pas un habit tracker.</h2><p class="section-intro">Pas de streak, pas d'objectif quotidien, pas de pression à cocher. AGOZI garde simplement la mémoire des choses qui reviennent.</p></div><div class="compare"><table><thead><tr><th></th><th>AGOZI</th><th>Todo / habit tracker</th></tr></thead><tbody><tr><td>But principal</td><td><strong>Se souvenir du dernier passage</strong></td><td>Planifier / cocher</td></tr><tr><td>Streaks / gamification</td><td><strong>Non</strong></td><td>Souvent</td></tr><tr><td>Compte obligatoire</td><td><strong>Non</strong></td><td>Fréquent</td></tr><tr><td>Publicité en V1</td><td><strong>Aucune</strong></td><td>Variable</td></tr><tr><td>Données de vos items</td><td><strong>Locales par défaut · cloud seulement si partagé</strong></td><td>Souvent cloud</td></tr></tbody></table></div></div>
+  <section id="confidentialite" class="section privacy-section">
+    <div class="container">
+      <div class="privacy-heading"><p class="eyebrow">03 — Votre quotidien vous appartient</p><h2>Privé par nature.<br>Partagé par choix.</h2><p class="section-intro">Un outil discret, qui sait aussi se faire oublier.</p></div>
+      <div class="privacy-columns">
+        <article><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><h3>Pour vous. Sur votre appareil.</h3><p>Vos suivis privés restent locaux et utilisables hors ligne, sans inscription. Ni publicité, ni compte à créer pour commencer.</p><a class="text-link" href="/privacy/">Notre engagement de confidentialité <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></article>
+        <article><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-17a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v3"/></svg><h3>À deux, quand c’est utile.</h3><p>Un compte optionnel permet de partager les suivis choisis avec une autre personne. Seuls ces éléments sont synchronisés ; les autres restent privés.</p><p class="detail-note">Invitez par AGOZI ID et retrouvez les réalisations, annulations et l’historique commun. Le propriétaire conserve la main sur la définition du suivi.</p></article>
+      </div>
+      <div class="feature-line"><span>29 langues</span><span>Thèmes clair et sombre</span><span>Export et import des données locales</span></div>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="container center"><p class="eyebrow">Une V1 volontairement nette</p><h2>Tout ce qu'il faut. Rien qui détourne l'attention.</h2><p class="section-intro">AGOZI a été pensé comme un outil calme : rapide à comprendre, rapide à utiliser, puis à oublier jusqu'au prochain rappel utile.</p></div>
-    <div class="container bento"><article class="bento-card large dark-card"><div class="feature-icon">↗</div><h3>Les priorités apparaissent dans le bon ordre.</h3><p>En retard, aujourd'hui, bientôt ou tout va bien. Le tableau de bord est trié par date d'échéance réelle.</p></article><article class="bento-card large green-card"><div class="feature-icon">◷</div><h3>Des rappels locaux, pas du bruit.</h3><p>À l'échéance, puis J+3 et J+7 si nécessaire. Une heure globale configurable, sans répétition infinie.</p></article><article class="bento-card medium"><div class="feature-icon">✓</div><h3>Fait aujourd'hui</h3><p>Un geste suffit pour recommencer le cycle et conserver l'historique.</p></article><article class="bento-card medium"><div class="feature-icon">⇄</div><h3>Partage à deux</h3><p>Partagez uniquement les items que vous choisissez. Done, Undo et historique se synchronisent entre les participants.</p></article><article class="bento-card medium"><div class="feature-icon">↥</div><h3>Export / import</h3><p>Une sauvegarde volontaire reste disponible pour vos données locales.</p></article><article class="bento-card medium"><div class="feature-icon">◐</div><h3>Clair ou sombre</h3><p>Thème clair, sombre ou synchronisé avec votre appareil.</p></article><article class="bento-card small"><div class="feature-icon">文</div><h3>29 langues</h3><p>Une V1 pensée pour être mondiale.</p></article><article class="bento-card small"><div class="feature-icon">⌁</div><h3>Hors ligne</h3><p>Le cœur d'AGOZI ne dépend pas d'une connexion.</p></article><article class="bento-card small"><div class="feature-icon">◎</div><h3>Vrais mois</h3><p>Des mois calendaires, pas une approximation.</p></article><article class="bento-card small"><div class="feature-icon">＋</div><h3>Vos propres items</h3><p>Vous restez libre de suivre ce qui compte pour vous.</p></article></div>
+  <section class="section white" id="questions">
+    <div class="container faq-layout">
+      <div><p class="eyebrow">04 — En toute simplicité</p><h2>Quelques réponses.<br>Et c’est tout.</h2><p class="section-intro">Une autre question ?<br><a class="text-link" href="/support/">Nous sommes là <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p></div>
+      <div class="faq">
+        <details><summary>AGOZI est-elle déjà disponible ?</summary><p>AGOZI est actuellement en test fermé sur Android. Elle n’est pas encore disponible publiquement sur Google Play.</p></details>
+        <details><summary>Faut-il payer ou créer un compte ?</summary><p>AGOZI est gratuite et sans publicité. Aucun compte n’est nécessaire pour les suivis privés. Un compte sert uniquement si vous choisissez de partager un suivi avec une autre personne.</p></details>
+        <details><summary>Est-ce une todo list ou un calendrier ?</summary><p>Ni une todo list générale, ni un calendrier de rendez-vous. AGOZI mémorise la dernière réalisation d’une tâche récurrente et calcule la prochaine échéance à partir de l’intervalle choisi.</p></details>
+        <details><summary>Comment fonctionnent les rappels ?</summary><p>Les notifications sont programmées localement, à l’échéance, puis à J+3 et J+7 si nécessaire. Leur heure est configurable. Les réglages Android et les autorisations de notification peuvent influencer leur réception.</p></details>
+        <details><summary>Et si je valide une tâche par erreur ?</summary><p>Une option d’annulation permet de revenir sur une validation faite par erreur. L’historique vous aide à garder la trace des réalisations.</p></details>
+      </div>
+    </div>
+    <div class="container"><div class="launch-note"><div><p class="eyebrow">La suite se prépare</p><h2>Moins à garder en tête.<br>Plus de place pour le reste.</h2><p>AGOZI est actuellement en test fermé sur Android.</p></div><a class="button secondary" href="/about/">Faire connaissance avec AGOZI <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div>
   </section>
-
-  <section id="confidentialite" class="section white">
-    <div class="container privacy-panel"><div class="privacy-logo"><img src="/assets/agozi-logo.png" alt="AGOZI"></div><div class="privacy-copy"><p class="eyebrow" style="color:#a9c6ad">Conçu avec retenue</p><h2>Gratuit ne veut pas dire payé avec vos données.</h2><p class="section-intro">La V1 limite volontairement les dépendances et garde vos informations sous votre contrôle.</p><div class="checks"><div class="check"><i>✓</i><span><strong>Sans publicité</strong> — aucun SDK publicitaire, aucune bannière, aucun interstitiel.</span></div><div class="check"><i>✓</i><span><strong>Compte optionnel</strong> — aucune inscription nécessaire pour utiliser AGOZI en privé ; un compte sert uniquement aux fonctions de partage.</span></div><div class="check"><i>✓</i><span><strong>Local-first</strong> — vos items privés restent sur votre appareil. Seuls les items que vous choisissez de partager sont synchronisés.</span></div></div></div></div>
-  </section>
-
-  <section class="section white"><div class="container center"><p class="eyebrow">À deux, quand c'est utile</p><h2>Partagez un suivi, pas toute votre vie.</h2><p class="section-intro">Créez un compte uniquement si vous le souhaitez, utilisez votre AGOZI ID pour inviter une autre personne et choisissez item par item ce qui devient partagé. Le propriétaire garde la main sur la définition de l'item ; les participants peuvent enregistrer Done, Undo et suivre l'historique commun.</p></div></section><section class="section"><div class="container center"><p class="eyebrow">Pour la vraie vie</p><h2>Les choses qui ne méritent pas une todo list.</h2><p class="section-intro">AGOZI fonctionne pour tout ce que vous faites de temps en temps et dont vous voulez simplement garder la trace.</p><div class="examples"><span class="example">Changer les draps</span><span class="example">Détartrer la machine à café</span><span class="example">Changer un filtre</span><span class="example">Laver la voiture</span><span class="example">Arroser une plante</span><span class="example">Contrôle annuel</span><span class="example">Soins d'un animal</span><span class="example">Votre propre item</span></div></div></section>
-
-  <section class="section white"><div class="container faq"><div class="center"><p class="eyebrow">Questions fréquentes</p><h2>AGOZI en quelques réponses.</h2></div><details><summary>AGOZI est-elle une application de tâches ?</summary><p>AGOZI n'est pas une todo list générale. Elle mémorise la dernière réalisation d'une action récurrente, calcule sa prochaine échéance et vous rappelle quand il est temps de recommencer.</p></details><details><summary>Faut-il créer un compte ?</summary><p>Non. Un compte n'est pas nécessaire pour les suivis privés. Il devient utile uniquement si vous choisissez de partager un suivi avec une autre personne.</p></details><details><summary>Quels types d'échéances peut-on suivre ?</summary><p>Entretien de la maison ou de la voiture, soins des animaux et des plantes, vérifications administratives, nettoyage périodique ou toute autre action personnalisée.</p></details><details><summary>AGOZI remplace-t-elle un calendrier ?</summary><p>Non. Un calendrier est idéal pour les rendez-vous fixés à une date précise. AGOZI est conçu pour les actions dont la prochaine échéance dépend de la dernière fois où elles ont été réalisées.</p></details></div></section>
-
-  <section class="section"><div class="container"><div class="final-cta"><h2>Remember it. Before it’s too late.</h2><p>AGOZI est actuellement en test fermé sur Android. Le lancement public Google Play arrive ensuite.</p></div></div></section>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="/assets/agozi-logo.png" alt="AGOZI"><p>La mémoire simple des choses récurrentes du quotidien.</p></div><div><nav class="footer-links"><a href="/fonctionnement/">Fonctionnement</a><a href="/usages/entretien-maison/">Entretien maison</a><a href="/usages/entretien-voiture/">Entretien voiture</a><a href="/privacy/">Confidentialité</a><a href="/support/">Support</a><a href="/terms/">Conditions</a><a href="/legal/">Mentions légales</a><a href="/about/">À propos</a><a href="/en/">English</a></nav><div class="footer-mail"><a href="mailto:support@agozi.eu">support@agozi.eu</a><a href="mailto:contact@agozi.eu">contact@agozi.eu</a></div></div></div><div class="footer-bottom"><span>© <span data-year>2026</span> AGOZI.</span><span>Sans publicité · Sans compte obligatoire · Local-first</span></div></div></footer>
 <script src="/assets/app.js" defer></script>
