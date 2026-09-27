@@ -49,4 +49,4 @@ Support: https://www.agozi.eu/support/
 Terms: https://www.agozi.eu/terms/
 About: https://www.agozi.eu/about/
 
-AGOZI Android is currently in closed testing and is not yet publicly available on Google Play.
+AGOZI is available on Android through Google Play.
