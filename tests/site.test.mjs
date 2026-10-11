@@ -76,8 +76,8 @@ test('real screenshots, honest availability and self-hosted assets', () => {
       if (m[0].includes('/screenshots/')) assert.match(m[0], /width="709" height="1536"/);
     }
   }
-  assert.match(read('index.html'), /Pas encore disponible publiquement/);
-  assert.match(read('en/index.html'), /Not yet publicly available/);
+  assert.match(read('index.html'), /https:\/\/play.google.com\/store\/apps\/details\?id=com\.agozi\.app/);
+  assert.match(read('en/index.html'), /play.google.com\/store\/apps\/details/);
   assert.match(read('en/index.html'), /Real app screenshot in French/);
   assert.match(read('assets/styles.css'), /prefers-reduced-motion/);
   assert.match(read('assets/styles.css'), /:focus-visible/);
