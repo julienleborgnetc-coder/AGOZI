@@ -47,10 +47,10 @@ test('local links, fragment targets, images and stylesheets resolve', () => {
   }
 });
 
-test('sitemap preserves thirteen canonical pages and language pairs', () => {
+test('sitemap preserves seventeen canonical pages and language pairs', () => {
   const sitemap = read('sitemap.xml');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-  assert.equal(urls.length, 13);
+  assert.equal(urls.length, 17);
   for (const url of urls) {
     assert.equal(new URL(url).origin, 'https://www.agozi.eu');
     assert.ok(fs.existsSync(localFile(new URL(url).pathname)), url);
